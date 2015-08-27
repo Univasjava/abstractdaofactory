@@ -4,8 +4,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-import javax.management.RuntimeErrorException;
-
 public abstract class AbstractDAOFactory {
 	
 	public static final int TIPO_RDB = 1;
@@ -34,5 +32,6 @@ public abstract class AbstractDAOFactory {
 	} catch (IOException e) {
 		throw new RuntimeException("Não foi possível ler as propriedadades.", e);
 	}
+		
 	}
 }

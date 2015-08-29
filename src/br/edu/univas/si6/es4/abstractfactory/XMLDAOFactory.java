@@ -11,6 +11,11 @@ public class XMLDAOFactory extends AbstractDAOFactory {
 	public ClienteDAO createClienteDAO() {
 		return new ClienteXMLDAO();
 	}
+
+	@Override
+	public PedidoDAO createPedidoDAO() {
+		return new PedidoXMLDAO();
+	}
 	
 
 }

@@ -11,8 +11,9 @@ public abstract class AbstractDAOFactory {
 	
 	public abstract ProdutoDAO createProdutoDAO();
 	public abstract ClienteDAO createClienteDAO();
+	public abstract PedidoDAO createPedidoDAO();
 	
-	public static AbstractDAOFactory getfFactory(){
+	public static AbstractDAOFactory getFactory(){
 		String fileName = "daofactory.properties";
 		InputStream is = AbstractDAOFactory.class.getClassLoader().getResourceAsStream(fileName);
 		if(is == null) {

@@ -15,6 +15,7 @@ public class RDBDAOFactory extends AbstractDAOFactory {
 	@Override
 	public PedidoDAO createPedidoDAO() {
 		return new PedidoRDBDAO();
-	}	
+	}
+	
 
 }

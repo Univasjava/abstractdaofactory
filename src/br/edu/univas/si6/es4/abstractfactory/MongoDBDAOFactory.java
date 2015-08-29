@@ -1,21 +1,22 @@
 package br.edu.univas.si6.es4.abstractfactory;
 
-public class XMLDAOFactory extends AbstractDAOFactory {
+public class MongoDBDAOFactory extends AbstractDAOFactory {
 
 	@Override
 	public ProdutoDAO createProdutoDAO() {
-		return new ProdutoXMLDAO();
+		return new ProdutoMongoDBDAO();
 	}
 
 	@Override
 	public ClienteDAO createClienteDAO() {
-		return new ClienteXMLDAO();
+		return new ClienteMongoDBDAO();
 	}
 
 	@Override
 	public PedidoDAO createPedidoDAO() {
-		return new PedidoXMLDAO();
+		return new PedidoMongoDBDAO();
 	}
 
+	
 
 }

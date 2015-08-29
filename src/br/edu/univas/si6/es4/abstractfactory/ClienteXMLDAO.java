@@ -4,17 +4,14 @@ public class ClienteXMLDAO implements ClienteDAO {
 
 	@Override
 	public void insert(Cliente cliente) {
-		System.out.println("Inserindo cliente no arquivo xml...");
-		System.out.println(cliente);
-		
+		// TODO Auto-generated method stub
+
 	}
 
 	@Override
 	public Cliente[] list() {
-		System.out.println("Buscando cliente no arquivo xml...");
-		return new Cliente[0];
+		// TODO Auto-generated method stub
+		return null;
 	}
-	
-	
 
 }

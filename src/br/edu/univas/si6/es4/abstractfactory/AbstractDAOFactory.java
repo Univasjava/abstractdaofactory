@@ -27,7 +27,11 @@ public abstract class AbstractDAOFactory {
 			return new RDBDAOFactory();
 		} else if ("XML".equalsIgnoreCase(type)){
 			return new XMLDAOFactory();
-		} else {
+		} else if ("MongoDB".equalsIgnoreCase(type)){
+			return new MongoDBDAOFactory();
+			}
+		
+		else {
 			throw new RuntimeException("Tipo não suportado: " + type);
 		}
 	} catch (IOException e) {
